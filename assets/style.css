@@ -14,6 +14,10 @@ h1 {
 
 }
 
+h2 {
+    margin: 0;
+
+}
 nav {
     display: flex;
     flex-direction: row;
@@ -23,6 +27,7 @@ nav {
 nav a {
     text-decoration: wavy;
     font-size: 150px;
+    flex-direction: right;
 }
 .renders {
     display: flex;
@@ -32,6 +37,22 @@ nav a {
     background-color: grey;
     padding: 20px;
     box-shadow: 0 5px 35px rgba(146, 204, 206, 0.4);
+}
+
+.wrapper {
+    max-width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-section {
+    margin: 25px 0;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
 }
 
 @media screen and (max-width: 768px) {
