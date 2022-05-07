@@ -15,6 +15,10 @@ header {
     box-shadow: 0 5px 35px rgba(237, 231, 231, 0.4);
   }
 
+header h1:hover {
+    box-shadow: 0px 5px 300px rgba(255, 225, 0, 0.773);
+}
+
 /* PORTFOLIO */
 header h1 {
     display: flex;
@@ -74,16 +78,25 @@ nav a:last-child {
 }
 /* ABOUT ME */
 .page-section > h2 {
-    color: white;
+    flex: 0 0 20%;
+    color: rgb(255, 0, 132);
+    text-align: right;
+    padding-right: 90px;
+    border-right: 20px solid red;
+
+
 }
+.page-section > div {
+    flex: 0 0 77%;
+
+}
+
 .page-section p {
     margin-bottom: 50px;
-    display: flex;
-
 }
 
 
-
+/* BACKGROUND IMAGE (FIAT) */
 .hero-banner {
     background: rgba(179, 0, 0, 0.412);
     background-image: url("./background.jpg"), linear-gradient(180deg, rgb(46, 46, 46) 15%, rgb(22, 0, 0) 100%);
@@ -114,6 +127,11 @@ nav a:last-child {
     display: inline;
     border-radius: 30px;
   }
+
+/* ABARTH GLOW */
+.hero-banner h2:hover {
+    box-shadow: 0px 5px 30px rgba(255, 8, 0, 0.773);
+}
 
 
 @media screen and (max-width: 980px) {
