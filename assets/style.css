@@ -1,11 +1,21 @@
 /* whole page */
 * {
     box-sizing: border-box;
-    background-color: grey;
+    background-color: rgb(27, 30, 30);
 }
 
-
-h1 {
+header {
+    padding: 15px 6% 15px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: var(--tertiary);
+    box-shadow: 0 5px 35px rgba(237, 231, 231, 0.4);
+  }
+  
+header h1 {
     display: flex;
     font-family: 'Courier New', Courier, monospace;
     font-size: 75px;
@@ -14,9 +24,10 @@ h1 {
 
 }
 
+/* ABOUT ME */
 h2 {
     margin: 0;
-
+    font-size: 50px;
 }
 nav {
     display: flex;
@@ -25,19 +36,23 @@ nav {
 }
 
 nav a {
-    text-decoration: wavy;
-    font-size: 50px;
-    flex-direction: right;
-}
-.renders {
     display: flex;
-    margin-right: 20px;
-    font-family: 'Courier New', Courier, monospace;
-    float: right;
-    background-color: grey;
-    padding: 20px;
-    box-shadow: 0 5px 35px rgba(146, 204, 206, 0.4);
+    text-decoration: wavy;
+    font-size:37px;
+    flex-direction: right;
+    margin: 10px;
+    color: brown;
 }
+nav a:hover {
+    background-size: 100% 100%;
+    color: red;
+  }
+  
+nav a:last-child {
+    margin-right: 0;
+}
+
+
 
 .wrapper {
     max-width: 88%;
@@ -59,17 +74,11 @@ nav a {
     margin-bottom: 50px;
 }
 
-@media screen and (max-width: 768px) {
-    .header,.renders {
-        background-color: aqua;
-    }
-
-}
 
 
 .hero-banner {
-    background: pink;
-    background-image: url("#"), linear-gradient(180deg, red 15%, blue 100%);
+    background: rgba(179, 0, 0, 0.412);
+    background-image: url("./background.jpg"), linear-gradient(180deg, rgb(46, 46, 46) 15%, rgb(22, 0, 0) 100%);
     background-size: cover;
     background-position: center;
     background-blend-mode: soft-light;
@@ -81,10 +90,12 @@ nav a {
     align-items: flex-end;
     text-align: right;
   }
+
 .hero-banner div {
-    flex: 0 0 90%;
+    flex: 0 0 1%;
   }
   
+
   .hero-banner h2 {
     background-color: blue;
     color: red;
@@ -94,3 +105,16 @@ nav a {
     line-height: 1.2;
     display: inline;
   }
+
+  @media screen and (max-width: 768px) {
+    header, h1 {
+        background-color: aqua;
+        justify-content: center;
+    }
+
+    @media screen and (max-width: 768px) {
+        nav a {
+            font-size: 15px;
+        }
+}
+
