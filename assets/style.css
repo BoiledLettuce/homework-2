@@ -8,9 +8,9 @@
 h1 {
     display: flex;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 150px;
-    background: white;
-    justify-content: center;
+    font-size: 75px;
+    background-color: white;
+    justify-content: left;
 
 }
 
@@ -26,7 +26,7 @@ nav {
 
 nav a {
     text-decoration: wavy;
-    font-size: 150px;
+    font-size: 50px;
     flex-direction: right;
 }
 .renders {
@@ -55,9 +55,42 @@ nav a {
     justify-content: space-between;
 }
 
+.page-section p {
+    margin-bottom: 50px;
+}
+
 @media screen and (max-width: 768px) {
     .header,.renders {
         background-color: aqua;
     }
 
 }
+
+
+.hero-banner {
+    background: pink;
+    background-image: url("#"), linear-gradient(180deg, red 15%, blue 100%);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: soft-light;
+    min-height: 30vh;
+    color: var(--light);
+    padding: 2% 6%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+  }
+.hero-banner div {
+    flex: 0 0 90%;
+  }
+  
+  .hero-banner h2 {
+    background-color: blue;
+    color: red;
+    margin: 0;
+    padding: 5px 10px;
+    font-size: 2.3rem;
+    line-height: 1.2;
+    display: inline;
+  }
