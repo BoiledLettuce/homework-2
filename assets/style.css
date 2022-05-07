@@ -1,8 +1,31 @@
-
+/* whole page */
+* {
+    box-sizing: border-box;
+    background-color: grey;
+}
 
 
 .header {
+    display: flex;
     font-family: 'Courier New', Courier, monospace;
     font-size: 150px;
+    background: white;
+    justify-content: center;
+
+}
+
+.renders {
+    display: flex;
+    margin-right: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    float: right;
+    background-color: grey;
+    padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .header,.renders {
+        background-color: aqua;
+    }
 
 }
