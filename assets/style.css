@@ -4,16 +4,23 @@
     background-color: rgb(54, 50, 50);
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Koulen', cursive, monospace;
+    background-color: var(--light);
+    line-height: 1.5;
+  }
 
 
+  
 header {
-    padding: 15px 6% 15px 0;
+    padding: 25px 6% 25px 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    background-color: var(--tertiary);
     box-shadow: 0 5px 35px rgba(237, 231, 231, 0.4);
   }
 
@@ -142,9 +149,12 @@ nav a:last-child {
     box-shadow: 0px 5px 30px rgba(255, 8, 0, 0.773);
 }
 
-/* portfolio pics */
 
 
+main {
+    margin-top: 20px;
+    margin-bottom: 45px;
+  }
 
 
 .flex-container{
@@ -197,11 +207,31 @@ nav a:last-child {
 }
 
 
+/* portfolio pics */
 
 .surf-report {
     background-image: url("./background.jpg");
 }
 
+.abarth-report {
+    background-image: url("https://scontent-sjc3-1.xx.fbcdn.net/v/t1.6435-9/115905299_3209483145741262_2938440188087339962_n.jpg?_nc_cat=108&ccb=1-6&_nc_sid=e3f864&_nc_ohc=Dyn6y_RiPQkAX8ZjpdI&_nc_ht=scontent-sjc3-1.xx&oh=00_AT_602o1Q7h3LbRbOAUjUyvyplki_ltsnf42r4n8HuSsgw&oe=629E02A8");
+}
+
+.sn95-report {
+    background-image: url("https://cdna.artstation.com/p/assets/images/images/047/181/738/large/joshua-henson-wire1.jpg?1646948113");
+}
+
+.mech-report {
+    background-image: url("https://cdnb.artstation.com/p/assets/images/images/020/472/753/large/joshua-henson-a7d028-de82068fd77b4c12bfe6efc82a682774.jpg?1567908644");
+}
+
+.testa-report {
+    background-image: url("https://cdna.artstation.com/p/assets/images/images/017/944/464/large/joshua-henson-250yeah2.jpg?1557939340");
+}
+
+.nissan-report {
+    background-image: url("https://cdnb.artstation.com/p/assets/images/images/020/472/649/large/joshua-henson-1.jpg?1567907346");
+}
 .contact address {
     display:flex;
     flex-wrap:wrap;
@@ -221,7 +251,7 @@ nav a:last-child {
 
 @media screen and (max-width: 980px) {
     header, h1 {
-        background-color: aqua;
+        background-color: rgb(153, 0, 0);
         justify-content: center;
     }
 
