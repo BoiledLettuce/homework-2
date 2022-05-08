@@ -4,6 +4,8 @@
     background-color: rgb(27, 30, 30);
 }
 
+
+
 header {
     padding: 15px 6% 15px 0;
     display: flex;
@@ -19,7 +21,7 @@ header h1:hover {
     box-shadow: 0px 5px 300px rgba(255, 225, 0, 0.773);
 }
 
-/* PORTFOLIO */
+/* JOSHUA HENSON */
 header h1 {
     display: flex;
     font-family: 'Courier New', Courier, monospace;
@@ -28,7 +30,7 @@ header h1 {
     justify-content: left;
     border-radius: 25px;
     padding: 20px;
-
+    transition: all 1.0s;
 }
 
 /* ABOUT ME */
@@ -82,7 +84,7 @@ nav a:last-child {
     color: rgb(255, 0, 132);
     text-align: right;
     padding-right: 90px;
-    border-right: 20px solid red;
+    border-right: 20px solid rgb(162, 0, 255);
 
 
 }
@@ -93,11 +95,14 @@ nav a:last-child {
 
 .page-section p {
     margin-bottom: 50px;
+    color: rgb(13, 255, 0);
+    font-size: 30px;
+    
 }
 
 
 /* BACKGROUND IMAGE (FIAT) */
-.hero-banner {
+.Abarth {
     background: rgba(179, 0, 0, 0.412);
     background-image: url("./background.jpg"), linear-gradient(180deg, rgb(46, 46, 46) 15%, rgb(22, 0, 0) 100%);
     background-size: cover;
@@ -112,12 +117,12 @@ nav a:last-child {
     text-align: right;
   }
 
-.hero-banner div {
+.Abarth div {
     flex: 0 0 1%;
   }
   
 /* SUBTITLE */
-  .hero-banner h2 {
+  .Abarth h2 {
     background-color: blue;
     color: red;
     margin: 0;
@@ -126,11 +131,62 @@ nav a:last-child {
     line-height: 1.2;
     display: inline;
     border-radius: 30px;
+    transition: all 1.0s;
   }
 
 /* ABARTH GLOW */
-.hero-banner h2:hover {
+.Abarth h2:hover {
     box-shadow: 0px 5px 30px rgba(255, 8, 0, 0.773);
+}
+
+/* portfolio pics */
+
+
+
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-item {
+    border: 10px solid red;
+    min-height: 300px;
+    max-width: 350px;
+    display: flex;
+    align-items: flex-end;
+    background-size: cover;
+    margin: 50px;
+    flex-basis: 100%;
+    background-origin: content-box, padding-box;
+    background-repeat: no-repeat;
+    justify-content: right;
+    padding: 0 0 20px 0;
+    transition: all 1.0s;
+    background-blend-mode: exclusion;
+}
+.flex-item:first-child {
+    display: flex;
+}
+
+.flex-item:hover {
+    background-color: black;
+}
+
+.flex-item div {
+    background-color: rgb(0, 195, 255);
+    padding: 5px;
+}
+
+.flex-item h3 {
+    font-size: 20px;
+}
+
+
+
+.surf-report {
+    background-image: url("./background.jpg");
 }
 
 
