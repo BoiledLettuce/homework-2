@@ -14,7 +14,7 @@ Preview of portfolio:
 
 ![portfolio demo](./assets/Preview.JPG)
 
-
+**Link:** https://boiledlettuce.github.io/homework-2/
 
 - - -
 © Joshua Henson
